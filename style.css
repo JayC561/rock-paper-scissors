@@ -1,0 +1,85 @@
+body{height: 100vh;
+width: 100%;
+margin: 0;
+padding: 0;
+background-color: #252627;
+color: #d3d4d9;}
+
+.main{height: 100%;
+width: 100%;
+font-family: 'Karla'}
+
+h1{font-family: 'Rubik';
+background-color: #bb0a21;
+margin: 0;
+padding: 1%;
+text-align: center;}
+
+.score h2, .score h3{display: inline-block;
+font-size: 3em;
+}
+
+.score{width: 20%;
+border: 2px solid #d3d4d9;
+text-align: center;
+position: relative;
+left: 50%;
+transform: translateX(-50%) scale(0.5);
+}
+
+.score::before, .score::after{position: absolute;
+height: 50px;
+width: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+background-color: #FFF;
+color: #252627;
+}
+
+.score::before{content:'AI';
+top: 50%;
+left: 100%;
+transform: translate(-50%, -50%);
+}
+
+.score::after{content:'User';
+top: 50%;
+left: 0;
+transform: translate(-50%, -50%);
+}
+
+.move{font-size: 40px;
+text-align: center;}
+
+.choices{height: 150px;
+width: 300px;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;}
+
+div.choices > *{height: 80px;
+width: 80px;
+border: 2px solid #d3d4d9;
+border-radius: 50%;}
+
+.bgi{background-size: 75%;
+background-position: center;
+background-repeat: no-repeat;}
+
+.rock{background-image: url('images/rock.svg');
+cursor: pointer;}
+
+.paper{background-image: url('images/paper.svg');
+cursor: pointer;}
+
+.scissors{background-image: url('images/scissors.svg');
+cursor: pointer;}
+
+#description{font-size: 30px;
+text-align: center;}
