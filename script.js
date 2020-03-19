@@ -6,7 +6,7 @@ var scoreBoard = {
 var choice = {
   1: 'rock',
   2: 'paper',
-  3: 'rock'
+  3: 'scissors'
 }
 let userScore = 0;
 let compScore = 0;
@@ -16,7 +16,7 @@ const move = (val) => {
       // console.log(`You won you choose: ${val} and AI choose: ${random}`);
       userScore++;
       document.getElementById('user').innerHTML = userScore;
-      document.getElementById('description').innerHTML = `You choose ${choice[val]} and AI choose ${choice[random]}`;
+      document.getElementById('description').innerHTML = `You Won!!! You choose ${choice[val]} and AI choose ${choice[random]}`;
     }
     else if(val == random){
       alert("Match Draw");
@@ -24,7 +24,7 @@ const move = (val) => {
     else{
       compScore++;
       document.getElementById('comp').innerHTML = compScore;
-      document.getElementById('description').innerHTML = `You choose ${choice[val]} and AI choose ${choice[random]}`;
+      document.getElementById('description').innerHTML = `You Loose!!! You choose ${choice[val]} and AI choose ${choice[random]}`;
     }
 }
 
